@@ -1,0 +1,15 @@
+<section class="featured-products">
+  <h1 class="title">Shop for your pet</h1>
+
+  <div class="product-carousel-wrapper">
+    <div class="product-carousel" #carousel>
+      <app-product-card
+        *ngFor="let product of products"
+        [product]="product">
+      </app-product-card>
+    </div>
+
+    <button class="carousel-btn left" (click)="scrollCarousel(-1)">‹</button>
+    <button class="carousel-btn right" (click)="scrollCarousel(1)">›</button>
+  </div>
+</section>

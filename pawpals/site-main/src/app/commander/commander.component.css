@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/* Général */
+body {
+  background: url('http://all4desktop.com/data_images/original/4236532-background-images.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  color: #262626;
+  margin: 5% 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Titre */
+.title {
+  background: lightgrey;
+  border-radius: 5px 5px 0 0;
+  padding: 20px;
+  color: #166534;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2, h3, label, span, th, td, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  margin: 0;
+}
+
+.required {
+  color: red;
+}
+
+/* Auth (masqué) */
+.auth-option {
+  display: none;
+}
+
+/* Formulaire */
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  padding: 25px;
+  gap: 20px;
+}
+
+form {
+  flex: 2;
+  min-width: 300px;
+}
+
+/* Résumé commande */
+.Yorder {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+  border: 1px solid #dadada;
+  background: #fff;
+  margin-top: -15px;
+  margin-left: 30px;
+  align-self: flex-start;
+}
+
+.Yorder div {
+  margin-top: 10px;
+}
+
+.Yorder input[type="radio"] {
+  margin-right: 10px;
+}
+
+.Yorder img {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/* Étiquettes */
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label > span {
+  width: 30%;
+  font-weight: bold;
+}
+
+/* Champs de formulaire */
+input[type="text"],
+input[type="tel"],
+select {
+  flex: 1;
+  height: 35px;
+  padding: 5px 10px;
+  border: 1px solid #dadada;
+  color: #333;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  outline: none;
+  border-color: #999;
+}
+
+select {
+  height: 40px;
+}
+
+/* Tableau */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border-bottom: 1px solid #dadada;
+  padding: 10px;
+  font-size: 14px;
+}
+
+th {
+  text-align: left;
+  background: #f3f3f3;
+}
+
+/* Première colonne : produit */
+tr > td:first-child {
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+
+/* Dernière colonne : prix */
+tr > td:last-child {
+  text-align: right;
+  color: red;
+  font-weight: bold;
+}
+
+/* Bouton */
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: #22c55e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #E08A00;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .Yorder {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  label {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  label > span {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  select {
+    width: 100%;
+  }
+}
